@@ -1,0 +1,10 @@
+
+?
+java:S1948:")Make "mesVoyageurs" private or transient.(Ã˜ÓÖ
+E
+java:S1128
+"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ
+M
+java:S1128"8Remove this unused import 'javax.persistence.OneToMany'.(«õù;
+^
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(þ‘‹„

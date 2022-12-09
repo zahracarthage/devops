@@ -1,0 +1,43 @@
+
+b
+java:S1192f"GDefine a constant instead of duplicating this literal "taille" 3 times.(ÚßŞÛüÿÿÿÿ
+N
+java:S3518@"9Make sure "occ" can't be zero before doing this division.(‡²²
+M
+java:S3655c"7Call "Optional#isPresent()" before accessing the value.(Ë¢øÒ
+R
+java:S3655l"7Call "Optional#isPresent()" before accessing the value.(Ş¤ãşÿÿÿÿ
+w	java:S116!"]Rename this field "VoyageurRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦òª×ùÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ÚÎª«ıÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(÷ûêáşÿÿÿÿ
+M	java:S106;"9Replace this use of System.out or System.err by a logger.(˜èşK
+E	java:S108<")Either remove or fill this block of code.(å¥‡8ôöªÌ0
+S
+java:S1854G"=Remove this useless assignment to local variable "lesvoyage".(Â£üù
+|
+java:S2178L"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(•µµ’
+E	java:S108P")Either remove or fill this block of code.(å¥‡8ºªÌ0
+Y
+java:S1854d">Remove this useless assignment to local variable "lesvoyages".(î¹ªúÿÿÿÿ
+N	java:S106b"9Replace this use of System.out or System.err by a logger.(ïÿ³
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(ÚßŞÛüÿÿÿÿ
+S	java:S106l"9Replace this use of System.out or System.err by a logger.(Ş¤ãşÿÿÿÿ
+Y
+java:S1854s">Remove this useless assignment to local variable "lesvoyages".(î¹ªúÿÿÿÿ
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(ÚßŞÛüÿÿÿÿ
+?
+java:S5413y")Verify that "remove()" is used correctly.(ù¯É–
+?
+java:S5413y")Verify that "remove()" is used correctly.(ù¯É–
+T
+java:S1854ˆ"=Remove this useless assignment to local variable "formatter".(Öæ´Ô
+Z
+java:S1854ƒ">Remove this useless assignment to local variable "lesvoyages".(î¹ªúÿÿÿÿ
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(ÚßŞÛüÿÿÿÿ
+E
+java:S1481ˆ".Remove this unused "formatter" local variable.(Öæ´Ô
+N	java:S106‰"9Replace this use of System.out or System.err by a logger.(–¤Ï
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(ÍâÏ
+F	java:S108")Either remove or fill this block of code.(á¢–¬8øÊ‘ªÌ0
+9
+java:S1128"Remove this duplicated import.(é˜‚˜øÿÿÿÿ

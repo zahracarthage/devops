@@ -1,0 +1,11 @@
+
+w
+java:S1488("\Immediately return this expression instead of assigning it to the temporary variable "list".(ÚÏ•ªúÿÿÿÿ
+t
+java:S1488."YImmediately return this expression instead of assigning it to the temporary variable "v".(é¥‘Çûÿÿÿÿ
+R
+java:S3655 "7Call "Optional#isPresent()" before accessing the value.(‚Ô„úÿÿÿÿ
+R
+java:S3655!"7Call "Optional#isPresent()" before accessing the value.(ÛÅÖşúÿÿÿÿ
+H
+java:S11354"2Complete the task associated to this TODO comment.(îàùĞ

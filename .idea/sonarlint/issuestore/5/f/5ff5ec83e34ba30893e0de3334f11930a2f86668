@@ -1,0 +1,18 @@
+
+f	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¨£¬
+V
+java:S4684""@Replace this persistent entity with a simple POJO or DTO object.(×”¥
+[
+java:S4684*"@Replace this persistent entity with a simple POJO or DTO object.(íœÓöúÿÿÿÿ
+V
+java:S46841"@Replace this persistent entity with a simple POJO or DTO object.(é¨£¬
+Q	java:S1255"<This block of commented-out lines of code should be removed.(©º‹û
+Q	java:S125>"<This block of commented-out lines of code should be removed.(Ú°à¬
+h	java:S100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÏ¢Îıÿÿÿÿ
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(ê–€”
+b	java:S100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¢’
+]
+java:S4488P"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ì‘©#
+c	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ÏµË
+^
+java:S1128"HRemove this unused import 'tn.esprit.spring.repository.TrainRepository'.(Ñàò÷

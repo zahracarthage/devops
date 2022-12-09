@@ -1,0 +1,10 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(ØÖÚ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+e
+java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ
+b
+java:S1128"LRemove this unused import 'org.springframework.data.repository.query.Param'.(©”šô
+S
+java:S1128"=Remove this unused import 'tn.esprit.spring.entities.Voyage'.(Æ´Ø
