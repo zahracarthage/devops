@@ -62,7 +62,7 @@ public class VoyageurTest {
         v1.setIdVoyageur(1L);
         v1.setNomVoyageur("Skander");
 
-        verify(voyageurRepository, times(1)).save(v1);
+        verify(voyageurRepository).save(v1);
 
 
 
