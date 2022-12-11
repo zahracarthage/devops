@@ -16,7 +16,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.spring.entities.Voyageur;
 import tn.esprit.spring.repository.VoyageRepository;
+import tn.esprit.spring.repository.VoyageurRepository;
 import tn.esprit.spring.services.VoyageServiceImpl;
+import tn.esprit.spring.services.VoyageurServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,12 +32,18 @@ import java.util.Optional;
 class VoyageurTest {
 
     @Mock
-    VoyageRepository voyageurRepository;
+    VoyageurRepository voyageurRepository;
 
     @InjectMocks
-    VoyageServiceImpl voyageurService;
+    VoyageurServiceImpl voyageurService;
+    List<Voyageur> voyageurs = new ArrayList<Voyageur>() {
+        {
+            add(new Voyageur());
 
-    Voyageur voyageur = new Voyageur();
+        }
+
+    };
+
 
 
 
@@ -43,9 +51,14 @@ class VoyageurTest {
     void addVoyageurTest()
     {
        // Voyageur voyageur = new Voyageur();
-        voyageur.setIdVoyageur(1L);
-        voyageur.setNomVoyageur("zahra");
-        verify(voyageurRepository, times(1)).save(voyageur);
+        for (Voyageur v : voyageurs)
+        {
+            voyageurService.ajouterVoyageur(v);
+            verify(voyageurRepository, times(1)).save(v);
+
+        }
+
+
 
 
     }
