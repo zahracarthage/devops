@@ -27,7 +27,6 @@ import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
 @SpringBootTest
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class VoyageurTest {
 
     @Mock
@@ -41,7 +40,6 @@ class VoyageurTest {
 
 
     @Test
-    @Order(0)
     void addVoyageurTest()
     {
        // Voyageur voyageur = new Voyageur();
