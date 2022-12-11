@@ -1,0 +1,57 @@
+version: "3.3"
+
+services:
+  mysqldb:
+    image: mysql:5.7
+    container_name: mysqldb
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: tpAchat
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - 3306:3306
+    volumes:
+      - db:/var/lib/mysql
+  app:
+    depends_on:
+      - mysqldb
+    image:  zahracarthage/devops-backend
+    restart: on-failure
+    ports:
+      - 8089:8089
+    environment:
+      SPRING_APPLICATION_JSON: '{
+        "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/tpAchat?useSSL=false&createDatabaseIfNotExist=true&useUnicode=true",
+        "spring.datasource.username" : "root",
+        "spring.datasource.password" : "root",
+        "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
+        "spring.jpa.hibernate.ddl-auto" : "update"
+      }'
+    volumes:
+      - .m2:/root/.m2
+    stdin_open: true
+    tty: true
+  sonarqube:
+    image: sonarqube:8.9.7-community
+    volumes:
+      - sonarqube_data2:/opt/sonarqube/data
+      - sonarqube_extensions2:/opt/sonarqube/extensions
+      - sonarqube_logs2:/opt/sonarqube/logs
+    ports:
+      - "9000:9000"
+      - "9092:9092"
+  nexus:
+    image: sonatype/nexus3
+    volumes:
+      - "nexus-data:/nexus-data"
+    ports:
+      - "8081:8081"
+volumes:
+  db:
+  nexus-data:
+  sonarqube_data2:
+  sonarqube_extensions2:
+  sonarqube_logs2:
