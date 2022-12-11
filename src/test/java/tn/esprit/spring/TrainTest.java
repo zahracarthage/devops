@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
-class TrainTest {
+public class TrainTest {
 
     @Autowired
     ITrainService trainService;

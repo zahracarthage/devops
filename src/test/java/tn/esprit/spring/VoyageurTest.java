@@ -29,7 +29,7 @@ import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
 @SpringBootTest
-class VoyageurTest {
+public class VoyageurTest {
 
     @Mock
     VoyageurRepository voyageurRepository;
