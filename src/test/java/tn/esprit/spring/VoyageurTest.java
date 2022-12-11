@@ -2,6 +2,7 @@ package tn.esprit.spring;
 
 
 
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -15,14 +16,13 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.spring.entities.Voyageur;
-import tn.esprit.spring.repository.VoyageRepository;
 import tn.esprit.spring.repository.VoyageurRepository;
-import tn.esprit.spring.services.VoyageServiceImpl;
 import tn.esprit.spring.services.VoyageurServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
 
 
 
@@ -44,19 +44,22 @@ public class VoyageurTest {
 
     };
 
-
+    Voyageur v1 = new Voyageur();
 
 
     @Test
     void addVoyageurTest()
     {
        // Voyageur voyageur = new Voyageur();
-        for (Voyageur v : voyageurs)
+      /*  for (Voyageur v : voyageurs)
         {
             voyageurService.ajouterVoyageur(v);
             verify(voyageurRepository, times(1)).save(v);
 
-        }
+        }*/
+
+        verify(voyageurRepository, times(1)).save(v1);
+
 
 
 
