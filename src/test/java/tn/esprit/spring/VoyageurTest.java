@@ -44,7 +44,7 @@ public class VoyageurTest {
 
     };
 
-    Voyageur v1 = new Voyageur();
+
 
 
     @Test
@@ -57,6 +57,10 @@ public class VoyageurTest {
             verify(voyageurRepository, times(1)).save(v);
 
         }*/
+        Voyageur v1 = new Voyageur();
+
+        v1.setIdVoyageur(1L);
+        v1.setNomVoyageur("Skander");
 
         verify(voyageurRepository, times(1)).save(v1);
 
