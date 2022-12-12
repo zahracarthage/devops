@@ -1,13 +1,26 @@
 package tn.esprit.spring;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 005b80026f0931725ac0905e8ff41f0bdb3e1dd3
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+=======
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+import tn.esprit.spring.entities.Train;
+import tn.esprit.spring.entities.etatTrain;
+import tn.esprit.spring.services.ITrainService;
+>>>>>>> 005b80026f0931725ac0905e8ff41f0bdb3e1dd3
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,6 +32,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
+<<<<<<< HEAD
  class TrainTest {
 
     @Autowired
@@ -56,6 +70,31 @@ import static org.junit.jupiter.api.Assertions.*;
         assertNotNull(reg1);
         assertNotNull(reg2);
     }
+=======
+public class TrainTest {
+
+    @Autowired
+    ITrainService trainService;
+  
+
+    @Test
+    void addTrainTest() {
+        Train train = new Train();
+        List<Train> trainList = new ArrayList<>();
+        for (Long i=1L;i<=5L;i++) {
+          train.setIdTrain(i);
+          train.setCodeTrain(5L);
+          train.setEtat(etatTrain.en_gare);
+          train.setNbPlaceLibre(34);
+            trainService.ajouterTrain(train);
+            trainList.add(train);
+        }
+        assertEquals(5,trainList.size());
+    }
+
+
+
+>>>>>>> 005b80026f0931725ac0905e8ff41f0bdb3e1dd3
 
 
 
