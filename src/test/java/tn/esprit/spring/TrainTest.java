@@ -1,18 +1,9 @@
 package tn.esprit.spring;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 005b80026f0931725ac0905e8ff41f0bdb3e1dd3
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 
-<<<<<<< HEAD
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-=======
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +11,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.spring.entities.Train;
 import tn.esprit.spring.entities.etatTrain;
 import tn.esprit.spring.services.ITrainService;
->>>>>>> 005b80026f0931725ac0905e8ff41f0bdb3e1dd3
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -32,45 +22,6 @@ import static org.junit.jupiter.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
-<<<<<<< HEAD
- class TrainTest {
-
-    @Autowired
-    ITrainService trainService;
-
-    @Test
-    void addReglementTest() {
-        Train train = new Train();
-        
-        List<Train> traintList = new ArrayList<>();
-
-        for (Long i=1L;i<=5L;i++) {
-            reglement.setIdReglement(i);
-            reglement.setDateReglement(new Date());
-            reglement.setFacture(null);
-            reglement.setMontantPaye(5000);
-            reglement.setMontantRestant(1200);
-            reglement.setPayee(false);
-            Reglement reg = reglementService.addReglement(reglement);
-            reglementList.add(reg);
-        }
-        assertEquals(5,reglementList.size());
-    }
-
-    @Test
-    void retrieveAllReglementsTest() {
-        List<Reglement> reglements = reglementService.retrieveAllReglements();
-        assertEquals(5, reglements.size());
-    }
-
-    @Test
-    void retrieveReglementTest() {
-        Reglement reg1 = reglementService.retrieveReglement(2L);
-        Reglement reg2 = reglementService.retrieveReglement(4L);
-        assertNotNull(reg1);
-        assertNotNull(reg2);
-    }
-=======
 public class TrainTest {
 
     @Autowired
@@ -94,7 +45,6 @@ public class TrainTest {
 
 
 
->>>>>>> 005b80026f0931725ac0905e8ff41f0bdb3e1dd3
 
 
 
