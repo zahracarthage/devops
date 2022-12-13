@@ -8,6 +8,7 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
+
 @Component
 @Aspect
 public class PerformanceAspect {
@@ -20,7 +21,7 @@ public class PerformanceAspect {
             long start = System.currentTimeMillis();
             Object out=pjp.proceed();
             long elapsedTime = System.currentTimeMillis() - start;
-            logger.info("Method execution time: " + elapsedTime + " milliseconds.");
+            logger.log(logger.getLevel(), "Method execution time:  {0} milliseconds ", elapsedTime);
             return out;
     }
 

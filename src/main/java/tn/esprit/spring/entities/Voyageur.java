@@ -1,14 +1,8 @@
 package tn.esprit.spring.entities;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 
 @Entity 
 public class Voyageur implements Serializable{
@@ -30,7 +24,7 @@ public class Voyageur implements Serializable{
 	}
 
 	@ManyToMany(mappedBy = "mesVoyageurs")
-    public List<Voyage> mesvoyages;
+    private List<Voyage> mesvoyages;
 
 	public Long getIdVoyageur() {
 		return idVoyageur;

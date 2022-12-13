@@ -1,20 +1,13 @@
 package tn.esprit.spring.services;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.transaction.Transactional;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-
 import tn.esprit.spring.entities.Voyageur;
-
-
 import tn.esprit.spring.repository.VoyageurRepository;
+
+import java.util.List;
 
 
 @Service
@@ -35,21 +28,21 @@ public class VoyageurServiceImpl implements IVoyageurService{
 	public void modifierVoyageur(Voyageur voyageur) {
 		voyageurRepository.save(voyageur);
 	}
+	private static final Logger logger = LogManager.getLogger(VoyageurServiceImpl.class);
 
 	@Override
 	public List<Voyageur> recupererAll() {
 		List<Voyageur> list= (List<Voyageur>) voyageurRepository.findAll();
-		//Afficher la liste des voyageurs
 		for (Voyageur v: list) {
-			System.err.print("Voyageur");
-			System.out.print(v.toString()+"\n");
+			logger.log(logger.getLevel(),"Voyageur");
+			logger.log(logger.getLevel(),"voyageyr : {0}",v);
 		}
 		return list;
 	}
 
 	@Override
 	public Voyageur recupererVoyageParId(long idVoyageur) {
-		//TODO
+
 		return null;
 	}
 
